@@ -1,0 +1,197 @@
+p, h1 , h2, h3, li{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+	font-size: 1.4em;
+	
+}
+h1{
+	font-size: 5em;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+h2{
+	font-size: 5em;
+	font-weight: normal;
+}
+h3{
+	font-size: 4em;
+	font-weight: 300;
+}
+a:hover{
+	text-decoration: none;
+}
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+    max-width: 100%;
+}
+
+li{
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	font-size: 1.2em;
+	font-weight: 100;
+}
+hr{
+	border-top: 1px solid #c7c7c7;
+}
+.white{
+	color: white;
+}
+.jumbotron{
+	background-image: url('/images/bg2.jpg');
+	min-height: 100%;
+	height:100vh;
+	color: white;
+	width: 100%;
+	right: 1em;
+
+}
+.jumbotron .col-lg-12{
+	padding:4em 0 3em 0;
+}
+.jumbotron img{
+	padding-bottom: 2em;
+	width:100%;
+	height: 100%;
+}
+
+.jumbotron h1{
+	font-size: 4em;
+	font-weight: 300;
+}
+.row .col-lg-12 p{
+	margin-left: 15%;
+	margin-right: 15%;
+	font-weight:100;
+}
+.row{
+	padding:1em;
+}
+
+
+
+/*Purpose & Platform Section*/
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-6 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 1em;
+}
+.badge{
+	max-width: 11em;
+	max-height: 11em;
+	background-color: white;
+}
+.marketing .col-lg-12 img{
+	width: 100%;
+	height: 100%;
+}
+.marketing .col-lg-12 {
+	margin-bottom: 2em;
+}
+.marketing .col-lg-12 a{
+	margin-top: 1em;
+}
+.message{
+	/*border: 1px solid #cecdcd;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	padding:0 1em 0 0;*/
+	width:60%;
+	padding-right: 1em;
+	margin: auto;
+	
+}
+.message ol{
+	list-style-type: none;
+}
+
+
+/*Green*/
+.green{
+	background-color: #27ae60;
+	color: white;
+}
+@media (max-width: 1199px){
+	.green img{
+		display: none;
+	}
+}
+.question{
+	padding-top: 1.4em;
+}
+.answer{
+	padding: 1.5em 0 0 4em;
+}
+.padlr{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.green ol{
+	list-style-type: none;
+}
+
+
+/*Newsletter*/
+.navbar-inverse{
+	border-radius: 0;
+}
+/*These parts needs review*/
+.less-width{
+	width:65%;
+	margin:auto;
+}
+/*End of review*/
+#notif-desc{
+	margin-top: 2em;
+}
+.input-group{
+	margin-bottom: 4em;
+}
+/*mail chimp*/
+#mc_embed_signup{
+	background:#fff;
+	clear:left;
+	font-size:14px Helvetica,Arial,sans-serif;
+	width: 40%;
+	margin:auto;
+}
+
+
+
+a h2{
+	color:#2d2d2d;
+	text-decoration: none;
+}
+a:hover .row h2{
+	color:white;
+	text-decoration: none;	
+}
+
+#footer{
+	margin-bottom: 0;
+	font-size: 0.8em;
+	background-color: #f8f8f8;
+	border-top: 1px solid #c1c1c1;
+	padding-top: 1.2em;
+	padding-bottom: 1em;
+}
+.btn{
+	margin:0 0.2em 0 0.2em;
+}
+
+@media (max-width: 720px){
+	.jumbotron h1{
+		font-size: 3.4em;
+	}
+}
+
