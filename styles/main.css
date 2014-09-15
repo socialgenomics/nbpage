@@ -1,14 +1,21 @@
-p, h1 , h2, h3, li{
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+    max-width: 100%;
+}
+p, h1 , h2, h3, li, a{
 	font-family: 'Source Sans Pro', sans-serif;
 }
-p {
-	font-size: 1.4em;
-	
-}
+p {font-size: 1.4em;}
+a{font-weight: 200;}
 h1{
-	font-size: 5em;
-	font-weight: normal;
-	margin-bottom: 1em;
+	font-size: 4em;
+	font-weight: 300;
 }
 h2{
 	font-size: 5em;
@@ -21,75 +28,87 @@ h3{
 a:hover{
 	text-decoration: none;
 }
-html {
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    max-width: 100%;
-    overflow-x: hidden;
+ol{
+	list-style-type: none;
 }
-body{
-	overflow-x: hidden;
-    max-width: 100%;
-}
-
 li{
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	font-size: 1.2em;
 	font-weight: 100;
 }
-hr{
-	border-top: 1px solid #c7c7c7;
-}
-.white{
-	color: white;
-}
+
+.white{color: white;}
+
+
+/*Jumbotron*/
 .jumbotron{
-	background-image: url('/images/bg2.jpg');
-	min-height: 100%;
+	
 	height:100vh;
 	color: white;
-	width: 100%;
-	right: 1em;
-
+	width: 100vw;
 }
-.jumbotron .col-lg-12{
-	padding:4em 0 3em 0;
+.jumbotron .back-img{
+	position:absolute;
+	z-index:0;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.jumbotron .back-img img{
+	width:100vw;
+	height:100vh;
 }
 .jumbotron img{
-	padding-bottom: 2em;
 	width:100%;
 	height: 100%;
 }
-
-.jumbotron h1{
-	font-size: 4em;
-	font-weight: 300;
+.jumbotron .col-lg-12{
+	/*padding:1em 0 3em 0;*/
+	margin-bottom: 1em;
 }
+.jumbotron {
+	margin-bottom: 2em;
+}
+.jumbotron h1{
+	margin-bottom: 0.5em;
+}
+.jumbotron p{
+	margin-bottom: 2em;
+}
+.jumbo-icon{
+	opacity: 0.7;
+	height:120px !important;
+	width:120px !important;
+	margin: 1em 3em 3em 3em;
+}
+
+
+
 .row .col-lg-12 p{
 	margin-left: 15%;
 	margin-right: 15%;
 	font-weight:100;
 }
 .row{
-	padding:1em;
+	padding:2em 0 2em 0;
+
 }
+
 
 
 
 /*Purpose & Platform Section*/
-.marketing h2 {
-  font-weight: normal;
-}
 .marketing .col-lg-6 p {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 1em;
 }
-.badge{
-	max-width: 11em;
-	max-height: 11em;
-	background-color: white;
+.marketIcon{
+	max-width: 9em;
+	max-height: 9em;
+	margin: auto;	
 }
 .marketing .col-lg-12 img{
 	width: 100%;
@@ -111,9 +130,7 @@ hr{
 	margin: auto;
 	
 }
-.message ol{
-	list-style-type: none;
-}
+
 
 
 /*Green*/
@@ -121,62 +138,45 @@ hr{
 	background-color: #27ae60;
 	color: white;
 }
-@media (max-width: 1199px){
-	.green img{
-		display: none;
-	}
+
+
+/*Values*/
+#ourValues .col-md-2 p{
+	padding:0.5em;
+	font-weight: 200;
 }
-.question{
-	padding-top: 1.4em;
-}
-.answer{
-	padding: 1.5em 0 0 4em;
-}
-.padlr{
-	padding-left: 1em;
-	padding-right: 1em;
-}
-.green ol{
-	list-style-type: none;
+
+#ourValues .col-md-2{
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 
-/*Newsletter*/
-.navbar-inverse{
-	border-radius: 0;
-}
-/*These parts needs review*/
-.less-width{
-	width:65%;
-	margin:auto;
-}
-/*End of review*/
-#notif-desc{
-	margin-top: 2em;
-}
-.input-group{
-	margin-bottom: 4em;
-}
-/*mail chimp*/
+/*Mail Chimp*/
 #mc_embed_signup{
 	background:#fff;
 	clear:left;
 	font-size:14px Helvetica,Arial,sans-serif;
 	width: 40%;
 	margin:auto;
+	min-width:15em;
+	margin-top:0 !important;
+	padding-top:0;
+}
+#mc-embedded-subscribe{
+	margin:0 0 0 0 !important;
+}
+#signup h3{
+	margin-bottom: 0;
+	padding padding-bottom: 0;
+}
+/*remove top padding from signup*/
+.nopad{
+	padding-top: 0;
 }
 
 
-
-a h2{
-	color:#2d2d2d;
-	text-decoration: none;
-}
-a:hover .row h2{
-	color:white;
-	text-decoration: none;	
-}
-
+/*Footer*/
 #footer{
 	margin-bottom: 0;
 	font-size: 0.8em;
@@ -185,13 +185,41 @@ a:hover .row h2{
 	padding-top: 1.2em;
 	padding-bottom: 1em;
 }
-.btn{
-	margin:0 0.2em 0 0.2em;
+
+
+
+/*Glyphicons*/
+.glyphicon{
+	margin: 0 0.2em 0 0.2em
 }
 
+
+
+/*Buttons*/
+.btn-default{
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-weight: 100;
+}
+a.btn-default:hover {
+	background: rgba(255, 255, 255, 0.2);
+	color:white;
+}
+.btn-dark{
+	background: rgba(0, 0, 0, 0);
+	color:#333333;
+	font-weight: normal;
+	
+}
+a.btn-dark:hover{
+	color: #333333;
+	font-weight: normal;
+}
+
+
+/*Media*/
 @media (max-width: 720px){
 	.jumbotron h1{
 		font-size: 3.4em;
 	}
 }
-
